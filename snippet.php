@@ -18,7 +18,8 @@ function cart_has_product_with_shipping_class() {
               $_shippingclass = $term->slug;
               if ( $_shippingclass === 'add_shipping_class_slug_here') { // Add your certain shipping class here
                   
-                  // Our Shipping Class is in cart, do something!
+                  // Our Shipping Class is in cart, do something, for example display thedescription of the class!
+                  echo '<p>'. $term->description .'</p>';
                   
             }
          }
